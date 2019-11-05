@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.sumac</groupId>
 	<artifactId>property-resolver-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<description>A library that simplifies reading properties from multiple sources</description>
 	<url>https://github.com/ross-stockman/property-resolver-demo</url>
 	<organization>
