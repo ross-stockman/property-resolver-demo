@@ -4,7 +4,44 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.sumac</groupId>
 	<artifactId>property-resolver-demo</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>A library that simplifies reading properties from multiple sources</description>
+	<url>https://github.com/sumacio-github/property-resolver-demo</url>
+	<organization>
+		<name>sumac.io</name>
+		<url>http://sumac.io</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>MIT Licenses</name>
+			<url>http://www.opensource.org/licenses/mit-licenses.php</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>ross-stockman</id>
+			<name>Ross Stockman</name>
+			<email>ross@sumac.io</email>
+			<organization>sumac.io</organization>
+			<organizationUrl>https://github.com/sumacio-github/</organizationUrl>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+	<scm>
+		<connection>scm:git:git://github.com/sumacio-github/property-resolver-demo.git</connection>
+		<developerConnection>scm:git:ssh://github.com/sumacio-github/property-resolver-demo.git</developerConnection>
+		<url>https://github.com/sumacio-github/property-resolver-demo</url>
+	</scm>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -41,6 +78,19 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.1.0</version>
 			</plugin>
+			<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5.3</version>
+					<configuration>
+						<tagNameFormat>v@{project.version}</tagNameFormat>
+						<mavenExecutorId>forked-path</mavenExecutorId>
+						<useReleaseProfile>false</useReleaseProfile>
+						<releaseProfiles>release</releaseProfiles>
+						<remoteTagging>false</remoteTagging>
+						<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+					</configuration>
+				</plugin>
 		</plugins>
 	</build>
 </project>
