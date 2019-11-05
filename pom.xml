@@ -36,8 +36,8 @@
 		</repository>
 	</distributionManagement>
 	<scm>
-		<connection>scm:git:git://github.com/ross-stockman/property-resolver-demo.git</connection>
-		<developerConnection>scm:git:ssh://github.com/ross-stockman/property-resolver-demo.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com/ross-stockman/property-resolver-demo.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/ross-stockman/property-resolver-demo.git</developerConnection>
 		<url>https://github.com/ross-stockman/property-resolver-demo</url>
 	  <tag>v0.0.1</tag>
   </scm>
