@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.sumac</groupId>
 	<artifactId>property-resolver-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<description>A library that simplifies reading properties from multiple sources</description>
 	<url>https://github.com/ross-stockman/property-resolver-demo</url>
 	<organization>
@@ -39,7 +39,6 @@
 		<connection>scm:git:ssh://git@github.com/ross-stockman/property-resolver-demo.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/ross-stockman/property-resolver-demo.git</developerConnection>
 		<url>https://github.com/ross-stockman/property-resolver-demo</url>
-	  <tag>v0.0.1</tag>
   </scm>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
